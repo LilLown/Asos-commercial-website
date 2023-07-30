@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <img src="images/asos.png" alt="" width="125px">
+                </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="">Products</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Contact</a></li>
+                <li><a href="account.html">Account</a></li>
+            </ul>
+        </nav>
+        <img src="images/cart.png" alt="" width="20px" height="20px">
+            </div>
+        </div>
+    </div>
+
+    <!-- ------------------------------------------------------------- -->
+
+    <div class="account-page">
+        <div class="container">
+            <div class="row">
+                <div class="col-2">
+                    <img src="images/image 1.png" alt="" width="100%">
+                </div>
+                <div class="col-2">
+                    <div class="form-container">
+                        <div class="form-btn">
+                            <span>Login</span>
+                            <span>Register</span>
+                        </div>
+                        <form id="LoginForm">
+                            <input type="text" id="username" placeholder="Username" />
+                            <input type="text" id="password" placeholder="Password" />
+                            <button type="submit" class="button" id="loginBtn">Login</button>
+                        </form>
+                        
+                        <script>
+                            let username = document.querySelector("#username");
+                            let password = document.querySelector("#password");
+                            let loginBtn = document.querySelector("#loginBtn");
+                            loginBtn.addEventListener("click", function () {
+                              console.log(username.value);
+                              console.log(password.value);
+                              alert(
+                                "Đăng nhập thành công"
+                                );
+                            });
+                      </script>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+
+    
+
+
+
+
+
+</body>
+</html>
